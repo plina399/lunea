@@ -376,7 +376,7 @@ h1, h2, h3, .serif { font-family: var(--font-serif); font-weight: 500; line-heig
 .category-card__photo img[src="dresses.jpg"] { object-fit: contain; }
 
 /* корсетное платье в разделе «Платья»: вещь целиком, белый фон снимка растворяется в розовый */
-.card__photo img[src="dress-corset.jpg"] { object-fit: contain; mix-blend-mode: multiply; }
+.card__photo img[src="dress-corset.jpg"], .card__photo img[src="dress-volany.jpg"] { object-fit: contain; mix-blend-mode: multiply; }
 
 /* брюки: показываем вещь целиком */
 .category-card__photo img[src="9ce6bdba9d1d812804fd26bbd63a8a39.jpg"] { object-fit: contain; }
@@ -1324,7 +1324,7 @@ h1, h2, h3, .serif { font-family: var(--font-serif); font-weight: 500; line-heig
 
   /* ---------- Разделы категорий: карточки-заглушки, фото добавит заказчик ---------- */
   const CATEGORY_DATA = {
-    dresses:      { title: 'Платья',          base: 18900, photos: { 0: 'dress-pink.jpg', 1: 'dress-corset.jpg' } },
+    dresses:      { title: 'Платья',          base: 18900, photos: { 0: 'dress-volany.jpg', 1: 'dress-corset.jpg' } },
     tops:         { title: 'Топы',            base: 4900  },
     skirts:       { title: 'Юбки',            base: 8400  },
     pants:        { title: 'Брюки',           base: 9900  },
