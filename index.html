@@ -395,6 +395,12 @@ h1, h2, h3, .serif { font-family: var(--font-serif); font-weight: 500; line-heig
 /* пальто в «Новой коллекции»: светло-розовый фон, модель без изменений */
 .card__photo img[src="coat-gray.png"], .card__photo img[src="coat-pink4.jpg"] { mix-blend-mode: multiply; }
 
+/* юбка в «Новой коллекции»: тот же пудрово-розовый фон, что у пальто и костюма */
+.card__photo img[src="skirt-pink.jpg"] { mix-blend-mode: multiply; }
+
+/* платье в «Новой коллекции»: тот же пудрово-розовый фон, что у остальных */
+.card__photo img[src="dress-pink.jpg"] { mix-blend-mode: multiply; }
+
 /* кнопка добавления в корзину прямо на карточке каталога */
 .category-card__cart {
   position: absolute; left: 0; right: 0; bottom: 0;
@@ -900,7 +906,7 @@ h1, h2, h3, .serif { font-family: var(--font-serif); font-weight: 500; line-heig
       <div class="products">
         <article class="card reveal">
           <div class="card__photo">
-            <a href="#new"><img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=800&auto=format&fit=crop" alt="Платье «Ада» жемчужное" loading="lazy"></a>
+            <a href="#new"><img src="dress-pink.jpg" alt="Платье «Ада» жемчужное" loading="lazy"></a>
             <span class="card__tag">new</span>
             <button class="card__wish" data-wish aria-label="В избранное">
               <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s-7.5-4.7-10-9.3C.6 8.6 2.2 5 5.7 5c2 0 3.6 1 4.4 2.6L12 10l1.9-2.4C14.7 6 16.3 5 18.3 5c3.5 0 5.1 3.6 3.7 6.7C19.5 16.3 12 21 12 21Z"/></svg>
@@ -922,9 +928,9 @@ h1, h2, h3, .serif { font-family: var(--font-serif); font-weight: 500; line-heig
             <button class="card__btn" data-add-cart>В корзину</button>
           </div>
           <div class="card__info">
-            <h3 class="card__name">Пальто «Марго», кашемир</h3>
-            <p class="card__meta">70% шерсть · молочное</p>
-            <p class="card__price">34 500 ₽ <s>41 000 ₽</s></p>
+            <h3 class="card__name">Пальто-тренч</h3>
+            <p class="card__meta">Шерсть · кашемир</p>
+            <p class="card__price">8 990 ₽</p>
           </div>
         </article>
         <article class="card reveal">
