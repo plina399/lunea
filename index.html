@@ -376,7 +376,7 @@ h1, h2, h3, .serif { font-family: var(--font-serif); font-weight: 500; line-heig
 .category-card__photo img[src="dresses.jpg"] { object-fit: contain; }
 
 /* платья раздела «Платья»: вещь с полями, как на других карточках */
-.card__photo img[src="dress-corset.jpg"], .card__photo img[src="dress-volany.jpg"], .card__photo img[src="dress-shirt2.jpg"], .card__photo img[src="dress-shirt3.jpg"], .card__photo img[src="e14458e95252ee275c697a6ba4ade56c.jpg"], .card__photo img[src="dress-gorosh.jpg"], .card__photo img[src="dress-lux.jpg"], .card__photo img[src="dress-tux.jpg"] { object-fit: contain; mix-blend-mode: multiply; }
+.card__photo img[src="dress-corset.jpg"], .card__photo img[src="dress-volany.jpg"], .card__photo img[src="dress-shirt2.jpg"], .card__photo img[src="dress-shirt3.jpg"], .card__photo img[src="e14458e95252ee275c697a6ba4ade56c.jpg"], .card__photo img[src="dress-gorosh.jpg"], .card__photo img[src="dress-lux.jpg"], .card__photo img[src="dress-tux.jpg"], .card__photo img[src="dress-blue-mini.jpg"] { object-fit: contain; mix-blend-mode: multiply; }
 
 /* брюки: показываем вещь целиком */
 .category-card__photo img[src="9ce6bdba9d1d812804fd26bbd63a8a39.jpg"] { object-fit: contain; }
@@ -1324,7 +1324,7 @@ h1, h2, h3, .serif { font-family: var(--font-serif); font-weight: 500; line-heig
 
   /* ---------- Разделы категорий: карточки-заглушки, фото добавит заказчик ---------- */
   const CATEGORY_DATA = {
-    dresses:      { title: 'Платья',          base: 18900, photos: { 0: 'dress-volany.jpg', 1: 'dress-corset.jpg', 2: 'dress-shirt3.jpg', 3: 'e14458e95252ee275c697a6ba4ade56c.jpg', 4: 'dress-tux.jpg', 5: 'dress-gorosh.jpg', 6: 'dress-lux.jpg', 7: 'dress-tux.jpg' } },
+    dresses:      { title: 'Платья',          base: 18900, photos: { 0: 'dress-volany.jpg', 1: 'dress-corset.jpg', 2: 'dress-shirt3.jpg', 3: 'e14458e95252ee275c697a6ba4ade56c.jpg', 4: 'dress-tux.jpg', 5: 'dress-gorosh.jpg', 6: 'dress-lux.jpg', 7: 'dress-blue-mini.jpg' } },
     tops:         { title: 'Топы',            base: 4900  },
     skirts:       { title: 'Юбки',            base: 8400  },
     pants:        { title: 'Брюки',           base: 9900  },
@@ -1348,14 +1348,14 @@ h1, h2, h3, .serif { font-family: var(--font-serif); font-weight: 500; line-heig
     '<path d="M10 4a2 2 0 1 1 2 2l-8.9 6.6c-.9.7-.4 2.1.7 2.1h16.4c1.1 0 1.6-1.4.7-2.1L12 6"/></svg>';
 
   const ITEM_OVERRIDES = {
-    'dresses:0': { name: 'Платье с воланами, белое', meta: 'Хлопок · Шелк', price: 6990 },
-    'dresses:1': { name: 'Платье-корсет, серое', meta: 'Атлас · Кружево', price: 6459 },
-    'dresses:2': { name: 'Платье-рубашка, серое', meta: 'Лен · Вискоза', price: 7499 },
-    'dresses:3': { name: 'Платье с рюшами, персик', meta: 'Шифон · Вискоза', price: 5990 },
-    'dresses:4': { name: 'Коктейльное платье с кружевом, крем', meta: 'Атлас · Кружево', price: 5290 },
-    'dresses:5': { name: 'Платье-мини в горошек, черное', meta: 'Хлопок · Атлас', price: 4890 },
-    'dresses:6': { name: 'Вечернее платье с воланами, голубое', meta: 'Атлас · Шифон', price: 9890 },
-    'dresses:7': { name: 'Платье мини с бархатным бантом, крем', meta: 'Атлас · Бархат', price: 8990 }
+    'dresses:0': { name: 'Платье с воланами, белое', meta: 'Хлопок · шелк', price: 6990 },
+    'dresses:1': { name: 'Платье-корсет, серое', meta: 'Атлас · кружево', price: 6459 },
+    'dresses:2': { name: 'Платье-рубашка, серое', meta: 'Лен · вискоза', price: 7499 },
+    'dresses:3': { name: 'Платье с рюшами, персик', meta: 'Шифон · вискоза', price: 5990 },
+    'dresses:4': { name: 'Коктейльное платье с кружевом, крем', meta: 'Атлас · кружево', price: 5290 },
+    'dresses:5': { name: 'Платье-мини в горошек, черное', meta: 'Хлопок · атлас', price: 4890 },
+    'dresses:6': { name: 'Вечернее платье с воланами, голубое', meta: 'Атлас · шифон', price: 9890 },
+    'dresses:7': { name: 'Платье-мини с драпировкой, серо-голубое', meta: 'Атлас · эластан', price: 9990 }
   };
 
   function phCard(title, price, i, photos, catKey) {
