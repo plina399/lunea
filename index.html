@@ -375,10 +375,8 @@ h1, h2, h3, .serif { font-family: var(--font-serif); font-weight: 500; line-heig
 /* платье: тоже показываем вещь целиком */
 .category-card__photo img[src="dresses.jpg"] { object-fit: contain; }
 
-/* платья раздела «Платья»: вещь целиком, белый фон снимка растворяется в розовый */
-.card__photo img[src="dress-corset.jpg"], .card__photo img[src="dress-volany.jpg"] { object-fit: contain; mix-blend-mode: multiply; }
-/* платье-рубашка: обрезаны белые поля, заполняет карточку как остальные */
-.card__photo img[src="dress-shirt.jpg"] { object-fit: cover; mix-blend-mode: multiply; }
+/* платья раздела «Платья»: вещь с полями, как на других карточках */
+.card__photo img[src="dress-corset.jpg"], .card__photo img[src="dress-volany.jpg"], .card__photo img[src="dress-shirt.jpg"] { object-fit: contain; mix-blend-mode: multiply; }
 
 /* брюки: показываем вещь целиком */
 .category-card__photo img[src="9ce6bdba9d1d812804fd26bbd63a8a39.jpg"] { object-fit: contain; }
@@ -1352,7 +1350,7 @@ h1, h2, h3, .serif { font-family: var(--font-serif); font-weight: 500; line-heig
   const ITEM_OVERRIDES = {
     'dresses:0': { name: 'Платье с воланами, белое', meta: 'Хлопок · Шелк', price: 6990 },
     'dresses:1': { name: 'Платье-корсет, серое', meta: 'Атлас · Кружево' },
-    'dresses:2': { name: 'Платье-рубашка, серое', meta: 'Лен · Вискоза' }
+    'dresses:2': { name: 'Платье-рубашка, серое', meta: 'Лен · Вискоза', price: 7499 }
   };
 
   function phCard(title, price, i, photos, catKey) {
