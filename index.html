@@ -366,7 +366,8 @@ h1, h2, h3, .serif { font-family: var(--font-serif); font-weight: 500; line-heig
   transition: transform .8s var(--ease);
 }
 /* серый фон «Костюмов» осветляем до белого — фон получается как у остальных */
-.category-card__photo img[src="suits.png"] { filter: brightness(1.32); }
+/* костюм: показываем вещь целиком (правило для старого suits.png больше не нужно) */
+.category-card__photo img[src="b9707d64208cd17be759953869e5e69f.jpg"] { object-fit: contain; }
 
 /* широкая юбка: показываем вещь целиком без обрезки, как на фото топа */
 .category-card__photo img[src="b8331840ebe4cc7c1f6d4f11734286e6.jpg"] { object-fit: contain; }
@@ -385,6 +386,8 @@ h1, h2, h3, .serif { font-family: var(--font-serif); font-weight: 500; line-heig
 
 /* пижама (домашняя одежда): показываем вещь целиком */
 .category-card__photo img[src="7bfd9e1ec4a0572dbcfa02d2bc3ae0a5.jpg"] { object-fit: contain; }
+
+/* костюм: показываем вещь целиком (правило для старого suits.png больше не нужно) */
 
 /* фон фото костюма в «Новой коллекции» — нежно-розовый, как в каталоге */
 .card__photo img[src="6d924c1c457536aea2997b8ada08d263.jpg"] { mix-blend-mode: multiply; }
@@ -840,7 +843,7 @@ h1, h2, h3, .serif { font-family: var(--font-serif); font-weight: 500; line-heig
 <a href="#catalog-view" class="category-card reveal" data-category="outer"><div class="category-card__photo"><img src="b5b1ce83a49fe62fa7cac3811feb2381.jpg" alt="Верхняя одежда" loading="lazy"><button class="category-card__cart" data-add-cart-cat data-price="34500" aria-label="Добавить в корзину — Верхняя одежда">В корзину</button></div><div class="category-card__label"><span class="category-card__name">Верхняя одежда</span><span class="category-card__count">48 товаров</span></div><span class="category-card__arrow">→</span></a>
 <a href="#catalog-view" class="category-card reveal" data-category="accessories"><div class="category-card__photo"><img src="f4a8975c0d4e365ef6770d0e41c39225.jpg" alt="Аксессуары" loading="lazy"><button class="category-card__cart" data-add-cart-cat data-price="3900" aria-label="Добавить в корзину — Аксессуары">В корзину</button></div><div class="category-card__label"><span class="category-card__name">Аксессуары</span><span class="category-card__count">93 товара</span></div><span class="category-card__arrow">→</span></a>
 <a href="#catalog-view" class="category-card reveal" data-category="home"><div class="category-card__photo"><img src="7bfd9e1ec4a0572dbcfa02d2bc3ae0a5.jpg" alt="Домашняя одежда" loading="lazy"><button class="category-card__cart" data-add-cart-cat data-price="6900" aria-label="Добавить в корзину — Домашняя одежда">В корзину</button></div><div class="category-card__label"><span class="category-card__name">Домашняя одежда</span><span class="category-card__count">61 товар</span></div><span class="category-card__arrow">→</span></a>
-<a href="#catalog-view" class="category-card reveal" data-category="suits"><div class="category-card__photo"><img src="suits.png" alt="Костюмы" loading="lazy"><button class="category-card__cart" data-add-cart-cat data-price="9500" aria-label="Добавить в корзину — Костюмы">В корзину</button></div><div class="category-card__label"><span class="category-card__name">Костюмы</span><span class="category-card__count">39 товаров</span></div><span class="category-card__arrow">→</span></a>
+<a href="#catalog-view" class="category-card reveal" data-category="suits"><div class="category-card__photo"><img src="b9707d64208cd17be759953869e5e69f.jpg" alt="Костюмы" loading="lazy"><button class="category-card__cart" data-add-cart-cat data-price="9500" aria-label="Добавить в корзину — Костюмы">В корзину</button></div><div class="category-card__label"><span class="category-card__name">Костюмы</span><span class="category-card__count">39 товаров</span></div><span class="category-card__arrow">→</span></a>
       </div>
     </div>
   </section>
