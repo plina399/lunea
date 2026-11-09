@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+?<!DOCTYPE html>
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
@@ -376,7 +376,7 @@ h1, h2, h3, .serif { font-family: var(--font-serif); font-weight: 500; line-heig
 .category-card__photo img[src="dresses.jpg"] { object-fit: contain; }
 
 /* платья раздела «Платья»: вещь с полями, как на других карточках */
-.card__photo img[src="dress-corset.jpg"], .card__photo img[src="dress-volany.jpg"], .card__photo img[src="dress-shirt2.jpg"], .card__photo img[src="dress-shirt3.jpg"], .card__photo img[src="e14458e95252ee275c697a6ba4ade56c.jpg"], .card__photo img[src="dress-gorosh.jpg"], .card__photo img[src="dress-lux.jpg"], .card__photo img[src="dress-tux.jpg"], .card__photo img[src="dress-blue-mini.jpg"] { object-fit: contain; mix-blend-mode: multiply; }
+.card__photo img[src="dress-corset.jpg"], .card__photo img[src="dress-volany.jpg"], .card__photo img[src="dress-shirt2.jpg"], .card__photo img[src="dress-shirt3.jpg"], .card__photo img[src="e14458e95252ee275c697a6ba4ade56c.jpg"], .card__photo img[src="dress-gorosh.jpg"], .card__photo img[src="dress-lux.jpg"], .card__photo img[src="dress-tux.jpg"], .card__photo img[src="dress-blue-mini.jpg"], .card__photo img[src="top-coquette.jpg"], .card__photo img[src="top-menthol.jpg"], .card__photo img[src="top-volna.jpg"], .card__photo img[src="top-bow.jpg"] { object-fit: contain; mix-blend-mode: multiply; }
 
 /* брюки: показываем вещь целиком */
 .category-card__photo img[src="9ce6bdba9d1d812804fd26bbd63a8a39.jpg"] { object-fit: contain; }
@@ -1325,7 +1325,7 @@ h1, h2, h3, .serif { font-family: var(--font-serif); font-weight: 500; line-heig
   /* ---------- Разделы категорий: карточки-заглушки, фото добавит заказчик ---------- */
   const CATEGORY_DATA = {
     dresses:      { title: 'Платья',          base: 18900, photos: { 0: 'dress-volany.jpg', 1: 'dress-corset.jpg', 2: 'dress-shirt3.jpg', 3: 'e14458e95252ee275c697a6ba4ade56c.jpg', 4: 'dress-tux.jpg', 5: 'dress-gorosh.jpg', 6: 'dress-lux.jpg', 7: 'dress-blue-mini.jpg' } },
-    tops:         { title: 'Топы',            base: 4900  },
+    tops:         { title: 'Топы',            base: 4900,  photos: { 0: 'top-coquette.jpg', 1: 'top-menthol.jpg', 2: 'top-volna.jpg', 3: 'top-bow.jpg' } },
     skirts:       { title: 'Юбки',            base: 8400  },
     pants:        { title: 'Брюки',           base: 9900  },
     outer:        { title: 'Верхняя одежда',  base: 34500 },
@@ -1355,7 +1355,11 @@ h1, h2, h3, .serif { font-family: var(--font-serif); font-weight: 500; line-heig
     'dresses:4': { name: 'Коктейльное платье с кружевом, крем', meta: 'Атлас · кружево', price: 5290 },
     'dresses:5': { name: 'Платье-мини в горошек, черное', meta: 'Хлопок · атлас', price: 4890 },
     'dresses:6': { name: 'Вечернее платье с воланами, голубое', meta: 'Атлас · шифон', price: 9890 },
-    'dresses:7': { name: 'Платье-мини с драпировкой, серо-голубое', meta: 'Атлас · эластан', price: 9990 }
+    'dresses:7': { name: 'Платье-мини с драпировкой, серо-голубое', meta: 'Атлас · Эластан', price: 9990 },
+    'tops:0': { name: 'Топ-корсет, розовый', meta: 'Атлас · Кружево', price: 1990 },
+    'tops:1': { name: 'Топ с кружевом, мятно-розовый', meta: 'Хлопок · Кружево', price: 1790 },
+    'tops:2': { name: 'Блуза с воланами, черная', meta: 'Хлопок · Кружево', price: 2490 },
+    'tops:3': { name: 'Топ с бантом и воланом, голубое', meta: 'Хлопок · эластан', price: 4990 }
   };
 
   function phCard(title, price, i, photos, catKey) {
