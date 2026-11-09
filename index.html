@@ -375,6 +375,8 @@ h1, h2, h3, .serif { font-family: var(--font-serif); font-weight: 500; line-heig
 /* платье: тоже показываем вещь целиком */
 .category-card__photo img[src="dresses.jpg"] { object-fit: contain; }
 
+.category-card__photo img[src="skirt-velvet.jpg"] { object-fit: contain; }
+
 /* платья раздела «Платья»: вещь с полями, как на других карточках */
 .card__photo img[src="dress-corset.jpg"], .card__photo img[src="dress-volany.jpg"], .card__photo img[src="dress-shirt2.jpg"], .card__photo img[src="dress-shirt3.jpg"], .card__photo img[src="e14458e95252ee275c697a6ba4ade56c.jpg"], .card__photo img[src="dress-gorosh.jpg"], .card__photo img[src="dress-lux.jpg"], .card__photo img[src="dress-tux.jpg"], .card__photo img[src="dress-blue-mini.jpg"], .card__photo img[src="top-coquette.jpg"], .card__photo img[src="top-menthol.jpg"], .card__photo img[src="top-bluza.jpg"], .card__photo img[src="top-navy.jpg"], .card__photo img[src="top-mint2.jpg"], .card__photo img[src="top-volna.jpg"], .card__photo img[src="pants-denim.jpg"], img[src="pants-pink.jpg"], img[src="pants-navy.jpg"], img[src="pants-sky.jpg"], img[src="pants-black.jpg"], img[src="top-bow.jpg"], .card__photo img[src="top-mint2.jpg"], .card__photo img[src="top-broderie.jpg"], .card__photo img[src="top-white.jpg"], .card__photo img[src="top-white2.jpg"], .card__photo img[src="top-white3.jpg"], .card__photo img[src="top-broderie.jpg"], .card__photo img[src="skirt-ruffle.jpg"], .card__photo img[src="skirt-beige.jpg"], .card__photo img[src="skirt-plaid.jpg"], .card__photo img[src="skirt-lace.jpg"], .card__photo img[src="skirt-denim.jpg"], .card__photo img[src="skirt-coquette.jpg"], .card__photo img[src="skirt-puf.jpg"], .card__photo img[src="skirt-velvet.jpg"], .card__photo img[src="pants-denim.jpg"], img[src="pants-pink.jpg"], img[src="pants-navy.jpg"], img[src="pants-sky.jpg"], img[src="pants-black.jpg"], .card__photo img[src="pants-khaki.jpg"], .card__photo img[src="pants-gray.jpg"], .card__photo img[src="pants-polka-pink.jpg"], .card__photo img[src="pants-velvet-gray.jpg"], img[src="pants-satin-blue.jpg"] { object-fit: contain; mix-blend-mode: multiply; }
 
@@ -1331,7 +1333,7 @@ h1, h2, h3, .serif { font-family: var(--font-serif); font-weight: 500; line-heig
     tops:         { title: 'Топы',            base: 4900,  photos: { 0: 'top-coquette.jpg', 1: 'top-menthol.jpg', 2: 'top-volna.jpg', 3: 'top-bow.jpg', 4: 'top-white3.jpg', 5: 'top-navy.jpg', 6: 'top-mint2.jpg', 7: 'top-broderie.jpg' } },
     skirts:       { title: 'Юбки',            base: 8400,  photos: { 0: 'skirt-ruffle.jpg', 1: 'skirt-beige.jpg', 2: 'skirt-plaid.jpg', 3: 'skirt-lace.jpg', 4: 'skirt-coquette.jpg', 5: 'skirt-puf.jpg', 6: 'skirt-velvet.jpg', 7: 'skirt-denim.jpg' } },
     pants:        { title: 'Брюки',           base: 9900,  photos: { 0: 'pants-denim.jpg', 1: 'pants-khaki.jpg', 2: 'pants-black.jpg', 3: 'pants-polka-pink.jpg', 4: 'pants-velvet-gray.jpg', 5: 'pants-gray.jpg', 6: 'pants-sky.jpg', 7: 'pants-satin-blue.jpg' } },
-    outer:        { title: 'Верхняя одежда',  base: 34500 },
+    outer:        { title: 'Верхняя одежда',  base: 34500,  photos: { 0: 'outer-shearling.jpg' } },
     accessories:  { title: 'Аксессуары',      base: 3900  },
     home:         { title: 'Домашняя одежда', base: 6900  },
     suits:        { title: 'Костюмы',         base: 9500  }
@@ -1383,7 +1385,8 @@ h1, h2, h3, .serif { font-family: var(--font-serif); font-weight: 500; line-heig
     'skirts:4': { name: 'Юбка-пачка с бантом, розовая', meta: 'Шифон · кружево', price: 3890 },
     'skirts:5': { name: 'Мини-юбка-баллон, молочная', meta: 'Хлопок · лён', price: 3590 },
     'skirts:6': { name: 'Юбка-мини с кружевом, черная', meta: 'Вискоза · шелк', price: 3990 },
-    'skirts:7': { name: 'Юбка джинсовая мини с воланом', meta: 'Деним · хлопок', price: 5990 }
+    'skirts:7': { name: 'Юбка джинсовая мини с воланом', meta: 'Деним · хлопок', price: 5990 },
+    'outer:0': { name: 'Куртка-шершавка с пушистым воротником, розовая', meta: 'Хлопок · лён', price: 34900 }
   };
 
   function phCard(title, price, i, photos, catKey) {
