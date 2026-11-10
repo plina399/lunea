@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LUNÉA — инвестиционная презентация</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --rose:#FAF3F1; --rose2:#F4E6E6; --rose3:#F9F0EC;
+  --brown:#3A2E2A; --brown2:#5A4A44; --brown-soft:#8A7A72;
+  --accent:#C9A9A0; --line:#E8D8D2;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;background:#EFE6E2;color:var(--brown);}
+.slide{width:1280px;height:720px;background:var(--rose);margin:24px auto;padding:64px 72px;
+  display:flex;flex-direction:column;position:relative;overflow:hidden;box-shadow:0 10px 40px rgba(58,46,42,.12)}
+.slide.dark{background:var(--brown);color:var(--rose)}
+.frame{background:var(--rose2);border-radius:14px;padding:28px 32px}
+.frame.soft{background:var(--rose3)}
+h1,h2,h3,.serif{font-family:'Playfair Display',serif;font-weight:500}
+h1{font-size:72px;line-height:1.05;letter-spacing:.02em}
+h2{font-size:40px;margin-bottom:28px}
+h3{font-size:22px;margin-bottom:10px}
+.kicker{font-size:12px;letter-spacing:4px;text-transform:uppercase;color:var(--brown-soft);margin-bottom:18px}
+.slide.dark .kicker{color:var(--accent)}
+.lead{font-size:18px;line-height:1.6;color:var(--brown2);max-width:560px}
+.slide.dark .lead{color:var(--rose2)}
+.big{font-family:'Playfair Display',serif;font-size:56px;line-height:1;color:var(--brown)}
+.slide.dark .big{color:var(--rose)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.pill{display:inline-block;padding:6px 14px;border:1px solid var(--accent);border-radius:20px;
+  font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--brown2);margin-right:8px}
+.num{font-family:'Playfair Display',serif;font-size:40px;color:var(--brown);line-height:1}
+.slide.dark .num{color:var(--rose)}
+.label{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--brown-soft);margin-top:8px}
+.slide.dark .label{color:var(--accent)}
+.footer{position:absolute;bottom:28px;left:72px;right:72px;display:flex;justify-content:space-between;
+  font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--brown-soft)}
+.slide.dark .footer{color:var(--accent)}
+.bar{height:14px;border-radius:7px;background:var(--rose2);position:relative;margin:6px 0 4px}
+.bar>span{position:absolute;top:0;height:14px;border-radius:7px;background:var(--brown);display:block}
+.bar>span.soft{background:var(--accent)}
+.barrow{font-size:13px;margin-bottom:14px;color:var(--brown2)}
+.barrow b{font-weight:500;color:var(--brown)}
+table{width:100%;border-collapse:collapse;font-size:15px}
+th,td{border:1px solid var(--line);padding:12px 16px;text-align:left}
+th{background:var(--rose2);font-weight:500;font-size:12px;letter-spacing:1px;text-transform:uppercase}
+td.b{font-family:'Playfair Display',serif;font-size:18px}
+.logo{font-family:'Playfair Display',serif;font-size:26px;letter-spacing:.18em;font-weight:600}
+</style>
+</head>
+<body>
+
+<!-- SLIDE 1 — ОБЛОЖКА -->
+<section class="slide dark" style="justify-content:center">
+  <div style="max-width:900px">
+    <div class="kicker">Инвестиционная презентация · 2026</div>
+    <h1>LUNÉA</h1>
+    <div style="font-size:26px;font-family:'Playfair Display',serif;font-style:italic;margin:18px 0 34px">Женская одежда в эстетике soft power</div>
+    <p class="lead" style="max-width:640px">D2C-бренд женского гардероба: платья, костюмы, верхняя одежда и аксессуары в эстетике coquette и old money. Натуральные ткани, честный крой, цены 1 790 – 45 900 ₽.</p>
+    <div style="margin-top:44px;display:flex;gap:16px">
+      <span class="pill" style="border-color:var(--accent);color:var(--rose)">8 категорий</span>
+      <span class="pill" style="border-color:var(--accent);color:var(--rose)">64 SKU</span>
+      <span class="pill" style="border-color:var(--accent);color:var(--rose)">Средний чек 6 500 ₽</span>
+    </div>
+  </div>
+  <div class="footer"><span>lunea-fashion.ru</span><span>Слайд 1 / 8</span></div>
+</section>
+
+<!-- SLIDE 2 — РЫНОК -->
+<section class="slide">
+  <div class="kicker">Рынок</div>
+  <h2>Рынок огромный — и уходит в онлайн</h2>
+  <div class="grid3" style="margin-top:10px">
+    <div class="frame"><div class="num">3,94 трлн ₽</div><div class="label">Объём рынка одежды в России, 2025</div></div>
+    <div class="frame"><div class="num">55–60%</div><div class="label">Доля онлайн-покупок одежды</div></div>
+    <div class="frame"><div class="num">44%</div><div class="label">Моды продаётся на маркетплейсах (990 млрд ₽)</div></div>
+  </div>
+  <div style="margin-top:36px;max-width:960px">
+    <div class="barrow"><b>Женская одежда — крупнейшая категория fashion:</b> более 40% оборота продавцов Wildberries</div>
+    <div class="bar" style="max-width:960px"><span style="width:44%"></span></div>
+    <div class="barrow"><b>Ниша «coquette / old money»:</b> растущий спрос на капсульные коллекции, возвраты ниже среднерыночных (20% против 50%)</div>
+    <div class="bar" style="max-width:960px"><span class="soft" style="width:28%"></span></div>
+    <div class="barrow"><b>Слабые места конкурентов:</b> масс-маркет теряет продажи (−3…−15% в штуках), топ-6 брендов держат &lt;10% рынка — ниша открыта</div>
+  </div>
+  <div class="footer"><span>Источники: Lamoda Fashion Compass 2026, Data Insight, Moneyplace</span><span>Слайд 2 / 8</span></div>
+</section>
+
+<!-- SLIDE 3 — ПРОБЛЕМА И РЕШЕНИЕ -->
+<section class="slide">
+  <div class="kicker">Проблема → Решение</div>
+  <h2>Покупательница устала выбирать</h2>
+  <div class="grid2" style="margin-top:6px">
+    <div class="frame soft">
+      <h3>Проблема</h3>
+      <p style="font-size:15px;line-height:1.7;color:var(--brown2)">Масс-маркет — обезличенный и синтетический. Покупательница делает 70+ касаний с брендом перед покупкой, сравнивает цены на разных площадках и не находит бренд, которому доверяет.</p>
+    </div>
+    <div class="frame">
+      <h3>Решение — LUNÉA</h3>
+      <p style="font-size:15px;line-height:1.7;color:var(--brown2)">Капсульный гардероб «под ключ»: 8 категорий, согласованных между собой. Одна эстетика, натуральные ткани, честные лекала. Покупательница собирает образ в одном месте — и возвращается.</p>
+    </div>
+  </div>
+  <div class="grid4" style="margin-top:26px">
+    <div class="frame soft" style="padding:20px"><b>Эстетика</b><div style="font-size:13px;color:var(--brown2);margin-top:6px">coquette + old money — самый быстрорастущий запрос в fashion-поиске</div></div>
+    <div class="frame soft" style="padding:20px"><b>Качество</b><div style="font-size:13px;color:var(--brown2);margin-top:6px">натуральные ткани: шёлк, шерсть, хлопок, деним</div></div>
+    <div class="frame soft" style="padding:20px"><b>Лояльность</b><div style="font-size:13px;color:var(--brown2);margin-top:6px">капсульность = повторные покупки внутри бренда</div></div>
+    <div class="frame soft" style="padding:20px"><b>Контент</b><div style="font-size:13px;color:var(--brown2);margin-top:6px">готовые образы в карточках — ниже порог решения о покупке</div></div>
+  </div>
+  <div class="footer"><span>LUNÉA — soft power в каждой детали</span><span>Слайд 3 / 8</span></div>
+</section>
+
+<!-- SLIDE 4 — ПРОДУКТ -->
+<section class="slide">
+  <div class="kicker">Продукт</div>
+  <h2>8 категорий · 64 SKU · один гардероб</h2>
+  <div class="grid4" style="margin-top:10px">
+    <div class="frame"><h3>Платья</h3><div class="label">8 SKU · 6 990 – 27 900 ₽</div></div>
+    <div class="frame"><h3>Топы</h3><div class="label">8 SKU · 1 790 – 3 990 ₽</div></div>
+    <div class="frame"><h3>Юбки</h3><div class="label">8 SKU · 2 990 – 5 990 ₽</div></div>
+    <div class="frame"><h3>Брюки</h3><div class="label">8 SKU · 4 990 – 11 990 ₽</div></div>
+    <div class="frame"><h3>Верхняя одежда</h3><div class="label">8 SKU · 11 990 – 44 900 ₽</div></div>
+    <div class="frame"><h3>Костюмы</h3><div class="label">8 SKU · 8 490 – 29 900 ₽</div></div>
+    <div class="frame"><h3>Домашняя одежда</h3><div class="label">8 SKU · 4 490 – 5 990 ₽</div></div>
+    <div class="frame"><h3>Аксессуары</h3><div class="label">8 SKU · 2 290 – 4 990 ₽</div></div>
+  </div>
+  <div class="frame soft" style="margin-top:28px;max-width:1136px">
+    <p style="font-size:15px;line-height:1.7;color:var(--brown2)">Сайт-витрина уже работает: каталог с фильтрами по категориям, карточки товаров с составом, корзина, избранное, размерная сетка XS–XL, форма обратной связи. Средний чек корзины — 6 500 ₽ (2–3 вещи за заказ).</p>
+  </div>
+  <div class="footer"><span>lunea-fashion.ru — каталог уже онлайн</span><span>Слайд 4 / 8</span></div>
+</section>
+
+<!-- SLIDE 5 — АУДИТОРИЯ -->
+<section class="slide dark">
+  <div class="kicker">Аудитория</div>
+  <h2>Кому продаём</h2>
+  <div class="grid3" style="margin-top:10px">
+    <div class="frame" style="background:#4A3B36"><div class="num">25–45</div><div class="label">Ядро аудитории — женщины, городы 500 тыс.+</div></div>
+    <div class="frame" style="background:#4A3B36"><div class="num">38%</div><div class="label">Покупательниц «ориентированы на бренд» — они дают 59% объёма рынка (2,3 трлн ₽)</div></div>
+    <div class="frame" style="background:#4A3B36"><div class="num">3,2 тыс. ₽</div><div class="label">Средний чек растущей аудитории 50+ — премиум-сегмент +10–20% в год</div></div>
+  </div>
+  <p class="lead" style="margin-top:34px;max-width:980px">LUNÉA бьёт в две растущие группы сразу: молодую аудиторию эстетики coquette (TikTok, Pinterest) и зрелую аудиторию old money, которая платит за качество тканей и репутацию продавца. Обе покупают онлайн — 69% модных покупок уже идут через маркетплейсы.</p>
+  <div class="footer"><span>Источники: Ozon Fashion Research 2025, Lamoda</span><span>Слайд 5 / 8</span></div>
+</section>
+
+<!-- SLIDE 6 — БИЗНЕС-МОДЕЛЬ -->
+<section class="slide">
+  <div class="kicker">Бизнес-модель</div>
+  <h2>Как зарабатываем</h2>
+  <div class="grid2" style="margin-top:8px">
+    <div>
+      <div class="frame" style="margin-bottom:18px"><h3>D2C-сайт (уже работает)</h3><p style="font-size:14px;line-height:1.65;color:var(--brown2)">Маржа 65% — нет комиссий маркетплейса. Корзина, избранное, размерная сетка снижают возвраты.</p></div>
+      <div class="frame" style="margin-bottom:18px"><h3>Маркетплейсы — масштабирование</h3><p style="font-size:14px;line-height:1.65;color:var(--brown2)">Wildberries + Ozon: женская одежда = крупнейшая категория площадок. Комиссии ~25%, маржа ~40%. Запуск — 2-й квартал.</p></div>
+      <div class="frame"><h3>Повторные покупки</h3><p style="font-size:14px;line-height:1.65;color:var(--brown2)">Капсульность: клиентка докупает вещи под уже купленные. Целевой LTV — 25 000 ₽ за 18 месяцев.</p></div>
+    </div>
+    <div>
+      <div class="frame soft" style="padding:32px">
+        <div class="label">Юнит-экономика (средний заказ)</div>
+        <table style="margin-top:16px">
+          <tr><td>Средний чек</td><td class="b" style="text-align:right">6 500 ₽</td></tr>
+          <tr><td>Себестоимость (ткани, пошив)</td><td style="text-align:right">− 2 600 ₽</td></tr>
+          <tr><td>Логистика и эквайринг</td><td style="text-align:right">− 450 ₽</td></tr>
+          <tr><td>Маркетинг (CAC)</td><td style="text-align:right">− 950 ₽</td></tr>
+          <tr><td><b>Маржа с заказа</b></td><td class="b" style="text-align:right"><b>2 500 ₽</b></td></tr>
+        </table>
+        <div style="margin-top:18px;font-size:14px;color:var(--brown2)">Коэффициент повторных покупок — 35% к 12 месяцу. LTV/CAC = 3,8.</div>
+      </div>
+    </div>
+  </div>
+  <div class="footer"><span>Три источника выручки: сайт, маркетплейсы, повторные продажи</span><span>Слайд 6 / 8</span></div>
+</section>
+
+<!-- SLIDE 7 — ФИНАНСЫ -->
+<section class="slide">
+  <div class="kicker">Финансовый план</div>
+  <h2>Три года: от витрины к бренду</h2>
+  <div style="display:grid;grid-template-columns:1.15fr 1fr;gap:28px;margin-top:8px">
+    <div>
+      <div class="barrow"><b>Год 1 —</b> выручка <b>15 млн ₽</b> · только D2C · 2 300 заказов</div>
+      <div class="bar"><span style="width:12%"></span></div>
+      <div class="barrow"><b>Год 2 —</b> выручка <b>50 млн ₽</b> · + WB и Ozon · 7 700 заказов</div>
+      <div class="bar"><span style="width:40%"></span></div>
+      <div class="barrow"><b>Год 3 —</b> выручка <b>120 млн ₽</b> · 2 капсулы в сезон · 18 500 заказов</div>
+      <div class="bar"><span style="width:100%"></span></div>
+      <div style="margin-top:22px;font-size:14px;color:var(--brown2);line-height:1.7">Выход на операционную безубыточность — 14-й месяц. Точка безубыточности: 550 заказов в месяц при текущей юнит-экономике.</div>
+    </div>
+    <div class="frame" style="padding:30px">
+      <div class="label">Инвестиционное предложение</div>
+      <div class="num" style="margin:14px 0 6px">5 млн ₽</div>
+      <div style="font-size:14px;color:var(--brown2);line-height:1.8">
+        <b>40%</b> — закупка тканей и пошив первой коллекции<br>
+        <b>30%</b> — маркетинг (таргет, блогеры, Pinterest)<br>
+        <b>20%</b> — контент: съёмки, упаковка, брендинг<br>
+        <b>10%</b> — операционные расходы и фулфилмент
+      </div>
+      <div style="margin-top:18px;font-size:13px;color:var(--brown-soft)">Доля инвестора — 15%. Горизонт выхода — 3–4 года.</div>
+    </div>
+  </div>
+  <div class="footer"><span>Финмодель детализирована по месяцам</span><span>Слайд 7 / 8</span></div>
+</section>
+
+<!-- SLIDE 8 — ROADMAP + КОНТАКТ -->
+<section class="slide dark">
+  <div class="kicker">Roadmap · 18 месяцев</div>
+  <h2>Что дальше</h2>
+  <div class="grid4" style="margin-top:12px">
+    <div class="frame" style="background:#4A3B36"><div class="label">Мес 1–3</div><h3 style="margin-top:10px">Запуск продаж</h3><div style="font-size:13px;color:var(--rose2);margin-top:8px">Сайт уже онлайн. Первая закупка тканей, съёмка кампании, первые 100 заказов</div></div>
+    <div class="frame" style="background:#4A3B36"><div class="label">Мес 4–8</div><h3 style="margin-top:10px">Маркетплейсы</h3><div style="font-size:13px;color:var(--rose2);margin-top:8px">Выход на WB и Ozon, вторая капсула, 1 000 заказов в месяц</div></div>
+    <div class="frame" style="background:#4A3B36"><div class="label">Мес 9–13</div><h3 style="margin-top:10px">Бренд-медиа</h3><div style="font-size:13px;color:var(--rose2);margin-top:8px">Блогеры и Pinterest-стратегия, программа лояльности, LTV-петля</div></div>
+    <div class="frame" style="background:#4A3B36"><div class="label">Мес 14–18</div><h3 style="margin-top:10px">Масштаб</h3><div style="font-size:13px;color:var(--rose2);margin-top:8px">Точка безубыточности, третья капсула, офлайн-примерочные в Москве</div></div>
+  </div>
+  <div style="margin-top:44px;display:flex;align-items:center;gap:40px">
+    <div>
+      <div class="logo">LUNÉA</div>
+      <div style="font-size:13px;color:var(--accent);letter-spacing:2px;text-transform:uppercase;margin-top:8px">Нежность — это тихая форма храбрости</div>
+    </div>
+    <div style="border-left:1px solid var(--accent);padding-left:40px">
+      <div style="font-size:15px;color:var(--rose2)">care@lunea-fashion.ru</div>
+      <div style="font-size:15px;color:var(--rose2);margin-top:6px">+7 495 000-00-00</div>
+    </div>
+  </div>
+  <div class="footer"><span>LUNÉA · инвестиционная презентация</span><span>Слайд 8 / 8</span></div>
+</section>
+
+</body>
+</html>
