@@ -634,6 +634,42 @@ h1, h2, h3, .serif { font-family: var(--font-serif); font-weight: 500; line-heig
 .form__msg.show { opacity: 1; }
 
 /* ==========================================================================
+   РАЗМЕРНАЯ СЕТКА — модальное окно
+   ========================================================================== */
+.size-modal-overlay {
+  position: fixed; inset: 0; z-index: 140;
+  background: rgba(58, 46, 42, .45);
+  display: flex; align-items: center; justify-content: center;
+  padding: 20px; opacity: 0; visibility: hidden; transition: all .3s ease;
+}
+.size-modal-overlay.open { opacity: 1; visibility: visible; }
+.size-modal {
+  background: var(--bg-main); border-radius: 4px; max-width: 640px; width: 100%;
+  padding: 40px 44px 36px; position: relative; max-height: 90vh; overflow-y: auto;
+  transform: translateY(20px); transition: transform .3s ease;
+  box-shadow: 0 24px 60px rgba(58, 46, 42, .3);
+}
+.size-modal-overlay.open .size-modal { transform: translateY(0); }
+.size-modal__close {
+  position: absolute; top: 16px; right: 16px; width: 40px; height: 40px;
+  border-radius: 50%; border: none; background: transparent; cursor: pointer;
+  font-size: 22px; color: var(--accent); line-height: 1;
+}
+.size-modal__close:hover { background: var(--bg-powder-soft); }
+.size-modal h3 { font-family: var(--font-serif); font-size: 30px; font-weight: 500; margin-bottom: 4px; }
+.size-modal__hint { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--text-soft); margin-bottom: 22px; }
+.size-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+.size-table th, .size-table td { border: 1px solid var(--line); padding: 11px 14px; text-align: center; }
+.size-table th { font-weight: 500; background: var(--bg-powder-soft); font-size: 12px; letter-spacing: 1px; text-transform: uppercase; }
+.size-table td:first-child { font-family: var(--font-serif); font-size: 16px; }
+.size-modal__note { font-size: 13px; color: var(--text-soft); margin-top: 18px; }
+@media (max-width: 560px) {
+  .size-modal { padding: 28px 20px 24px; }
+  .size-table { font-size: 12px; }
+  .size-table th, .size-table td { padding: 8px 6px; }
+}
+
+/* ==========================================================================
    FOOTER
    ========================================================================== */
 .footer {
@@ -1082,7 +1118,7 @@ h1, h2, h3, .serif { font-family: var(--font-serif); font-weight: 500; line-heig
         <h4>Покупателям</h4>
         <ul>
           <li><a href="#faq">Доставка и оплата</a></li>
-          <li><a href="#faq">Таблица размеров</a></li>
+          <li><a href="#size-table" class="size-link">Таблица размеров</a></li>
           <li><a href="#faq">Возврат</a></li>
           <li><a href="#faq">Care-программа</a></li>
         </ul>
@@ -1109,6 +1145,25 @@ h1, h2, h3, .serif { font-family: var(--font-serif); font-weight: 500; line-heig
 </button>
 
 <div class="toast" id="toast" role="status"></div>
+
+
+<!-- ============ РАЗМЕРНАЯ СЕТКА (модальное окно) ============ -->
+<div class="size-modal-overlay" id="sizeModal" aria-hidden="true">
+  <div class="size-modal" role="dialog" aria-label="Размерная сетка">
+    <button class="size-modal__close" id="sizeModalClose" aria-label="Закрыть">×</button>
+    <h3>Размерная сетка</h3>
+    <p class="size-modal__hint">Все измерения — в сантиметрах</p>
+    <table class="size-table">
+      <tr><th>Размер</th><th>INT</th><th>Грудь</th><th>Талия</th><th>Бёдра</th></tr>
+      <tr><td>XS</td><td>40–42</td><td>80–84</td><td>60–64</td><td>86–90</td></tr>
+      <tr><td>S</td><td>42–44</td><td>84–88</td><td>64–68</td><td>90–94</td></tr>
+      <tr><td>M</td><td>44–46</td><td>88–92</td><td>68–72</td><td>94–98</td></tr>
+      <tr><td>L</td><td>46–48</td><td>92–96</td><td>72–76</td><td>98–102</td></tr>
+      <tr><td>XL</td><td>48–50</td><td>96–100</td><td>76–80</td><td>102–106</td></tr>
+    </table>
+    <p class="size-modal__note">Если ты между размерами — советуем взять больший. Параметры указаны для одежды с обычной посадкой; у моделей оверсайз-кроя вещи идут свободнее.</p>
+  </div>
+</div>
 
 <script>
 /* ==========================================================================
