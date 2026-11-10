@@ -378,7 +378,7 @@ h1, h2, h3, .serif { font-family: var(--font-serif); font-weight: 500; line-heig
 .category-card__photo img[src="skirt-velvet.jpg"] { object-fit: contain; }
 
 /* платья раздела «Платья»: вещь с полями, как на других карточках */
-.card__photo img[src="dress-corset.jpg"], .card__photo img[src="dress-volany.jpg"], .card__photo img[src="dress-shirt2.jpg"], .card__photo img[src="dress-shirt3.jpg"], .card__photo img[src="e14458e95252ee275c697a6ba4ade56c.jpg"], .card__photo img[src="dress-gorosh.jpg"], .card__photo img[src="dress-lux.jpg"], .card__photo img[src="dress-tux.jpg"], .card__photo img[src="dress-blue-mini.jpg"], .card__photo img[src="top-coquette.jpg"], .card__photo img[src="top-menthol.jpg"], .card__photo img[src="top-bluza.jpg"], .card__photo img[src="top-navy.jpg"], .card__photo img[src="top-mint2.jpg"], .card__photo img[src="top-volna.jpg"], .card__photo img[src="pants-denim.jpg"], img[src="pants-pink.jpg"], img[src="pants-navy.jpg"], img[src="pants-sky.jpg"], img[src="pants-black.jpg"], img[src="top-bow.jpg"], .card__photo img[src="top-mint2.jpg"], .card__photo img[src="top-broderie.jpg"], .card__photo img[src="top-white.jpg"], .card__photo img[src="top-white2.jpg"], .card__photo img[src="top-white3.jpg"], .card__photo img[src="top-broderie.jpg"], .card__photo img[src="skirt-ruffle.jpg"], .card__photo img[src="skirt-beige.jpg"], .card__photo img[src="skirt-plaid.jpg"], .card__photo img[src="skirt-lace.jpg"], .card__photo img[src="skirt-denim.jpg"], .card__photo img[src="skirt-coquette.jpg"], .card__photo img[src="skirt-puf.jpg"], .card__photo img[src="skirt-velvet.jpg"], .card__photo img[src="pants-denim.jpg"], img[src="pants-pink.jpg"], img[src="pants-navy.jpg"], img[src="pants-sky.jpg"], img[src="pants-black.jpg"], .card__photo img[src="pants-khaki.jpg"], .card__photo img[src="pants-gray.jpg"], .card__photo img[src="pants-polka-pink.jpg"], .card__photo img[src="pants-velvet-gray.jpg"], img[src="pants-satin-blue.jpg"] , img[src="outer-shearling.jpg"], img[src="outer-fur-white2.jpg"], img[src="outer-quilted.jpg"], img[src="outer-fur-taupe.jpg"], img[src="outer-denim-fur.jpg"], img[src="outer-fur-cream.jpg"], .card__photo img[src="outer-fur-biker.jpg"] { object-fit: contain; mix-blend-mode: multiply; } 
+.card__photo img[src="dress-corset.jpg"], .card__photo img[src="dress-volany.jpg"], .card__photo img[src="dress-shirt2.jpg"], .card__photo img[src="dress-shirt3.jpg"], .card__photo img[src="e14458e95252ee275c697a6ba4ade56c.jpg"], .card__photo img[src="dress-gorosh.jpg"], .card__photo img[src="dress-lux.jpg"], .card__photo img[src="dress-tux.jpg"], .card__photo img[src="dress-blue-mini.jpg"], .card__photo img[src="top-coquette.jpg"], .card__photo img[src="top-menthol.jpg"], .card__photo img[src="top-bluza.jpg"], .card__photo img[src="top-navy.jpg"], .card__photo img[src="top-mint2.jpg"], .card__photo img[src="top-volna.jpg"], .card__photo img[src="pants-denim.jpg"], img[src="pants-pink.jpg"], img[src="pants-navy.jpg"], img[src="pants-sky.jpg"], img[src="pants-black.jpg"], img[src="top-bow.jpg"], .card__photo img[src="top-mint2.jpg"], .card__photo img[src="top-broderie.jpg"], .card__photo img[src="top-white.jpg"], .card__photo img[src="top-white2.jpg"], .card__photo img[src="top-white3.jpg"], .card__photo img[src="top-broderie.jpg"], .card__photo img[src="skirt-ruffle.jpg"], .card__photo img[src="skirt-beige.jpg"], .card__photo img[src="skirt-plaid.jpg"], .card__photo img[src="skirt-lace.jpg"], .card__photo img[src="skirt-denim.jpg"], .card__photo img[src="skirt-coquette.jpg"], .card__photo img[src="skirt-puf.jpg"], .card__photo img[src="skirt-velvet.jpg"], .card__photo img[src="pants-denim.jpg"], img[src="pants-pink.jpg"], img[src="pants-navy.jpg"], img[src="pants-sky.jpg"], img[src="pants-black.jpg"], .card__photo img[src="pants-khaki.jpg"], .card__photo img[src="pants-gray.jpg"], .card__photo img[src="pants-polka-pink.jpg"], .card__photo img[src="pants-velvet-gray.jpg"], img[src="pants-satin-blue.jpg"] , img[src="outer-shearling.jpg"], img[src="outer-fur-white2.jpg"], img[src="outer-quilted.jpg"], img[src="outer-pink-fur.jpg"], img[src="outer-fur-taupe.jpg"], img[src="outer-denim-fur.jpg"], img[src="outer-fur-cream.jpg"], .card__photo img[src="outer-fur-biker.jpg"] { object-fit: contain; mix-blend-mode: multiply; } 
 
 /* Топы (главная категория): вещь целиком */
 .category-card__photo img[src="top-mint2.jpg"] { object-fit: contain; }
@@ -550,9 +550,10 @@ h1, h2, h3, .serif { font-family: var(--font-serif); font-weight: 500; line-heig
 .card__name {
   font-family: var(--font-serif); font-size: 19px;
   min-height: calc(19px * 1.3 * 2);                    /* всегда 2 строки — мета и цена стартуют на одной высоте */
-  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
 }
 .card__meta { font-size: 12px; color: var(--text-soft); }
+.card__fill { font-size: 11px; color: var(--text-soft); opacity: .95; margin-top: -2px; }
+.card__photo img[src*='outer-'] { object-fit: contain; mix-blend-mode: multiply; }
 .card__price { font-size: 14px; font-weight: 400; letter-spacing: .02em; margin-top: auto; }
 .card__price s { color: var(--text-soft); margin-left: 8px; font-size: 12px; }
 
@@ -934,7 +935,7 @@ h1, h2, h3, .serif { font-family: var(--font-serif); font-weight: 500; line-heig
           </div>
           <div class="card__info">
             <h3 class="card__name">Платье-баллон, молочное</h3>
-            <p class="card__meta">Хлопок · вискоза</p>
+            <p class="card__meta">Хлопок, вискоза</p>
             <p class="card__price">4 990 ₽</p>
           </div>
         </article>
@@ -948,7 +949,7 @@ h1, h2, h3, .serif { font-family: var(--font-serif); font-weight: 500; line-heig
           </div>
           <div class="card__info">
             <h3 class="card__name">Пальто-тренч</h3>
-            <p class="card__meta">Шерсть · кашемир</p>
+            <p class="card__meta">Шерсть, кашемир</p>
             <p class="card__price">8 990 ₽</p>
           </div>
         </article>
@@ -962,7 +963,7 @@ h1, h2, h3, .serif { font-family: var(--font-serif); font-weight: 500; line-heig
           </div>
           <div class="card__info">
             <h3 class="card__name">Костюм двойка с топом без бретелей</h3>
-            <p class="card__meta">Хлопок · эластан</p>
+            <p class="card__meta">Хлопок, эластан</p>
             <p class="card__price">5 990 ₽</p>
           </div>
         </article>
@@ -976,7 +977,7 @@ h1, h2, h3, .serif { font-family: var(--font-serif); font-weight: 500; line-heig
           </div>
           <div class="card__info">
             <h3 class="card__name">Костюмные шорты, серый меланж</h3>
-            <p class="card__meta">Шерсть · вискоза</p>
+            <p class="card__meta">Шерсть, вискоза</p>
             <p class="card__price">3 990 ₽</p>
           </div>
         </article>
@@ -1337,8 +1338,8 @@ h1, h2, h3, .serif { font-family: var(--font-serif); font-weight: 500; line-heig
     tops:         { title: 'Топы',            base: 4900,  photos: { 0: 'top-coquette.jpg', 1: 'top-menthol.jpg', 2: 'top-volna.jpg', 3: 'top-bow.jpg', 4: 'top-white3.jpg', 5: 'top-navy.jpg', 6: 'top-mint2.jpg', 7: 'top-broderie.jpg' } },
     skirts:       { title: 'Юбки',            base: 8400,  photos: { 0: 'skirt-ruffle.jpg', 1: 'skirt-beige.jpg', 2: 'skirt-plaid.jpg', 3: 'skirt-lace.jpg', 4: 'skirt-coquette.jpg', 5: 'skirt-puf.jpg', 6: 'skirt-velvet.jpg', 7: 'skirt-denim.jpg' } },
     pants:        { title: 'Брюки',           base: 9900,  photos: { 0: 'pants-denim.jpg', 1: 'pants-khaki.jpg', 2: 'pants-black.jpg', 3: 'pants-polka-pink.jpg', 4: 'pants-velvet-gray.jpg', 5: 'pants-gray.jpg', 6: 'pants-sky.jpg', 7: 'pants-satin-blue.jpg' } },
-    outer:        { title: 'Верхняя одежда',  base: 34500,  photos: { 0: 'outer-shearling.jpg', 1: 'outer-pea-gray.jpg', 2: 'outer-quilted.jpg', 3: 'outer-fur-biker.jpg', 4: 'outer-fur-cream.jpg', 5: 'outer-denim-fur.jpg', 7: 'outer-fur-taupe.jpg' } },
-    accessories:  { title: 'Аксессуары',      base: 3900  },
+    outer:        { title: 'Верхняя одежда',  base: 34500,  photos: { 0: 'outer-shearling.jpg', 1: 'outer-pea-gray.jpg', 2: 'outer-quilted.jpg', 3: 'outer-fur-biker.jpg', 4: 'outer-fur-cream.jpg', 5: 'outer-denim-fur.jpg', 6: 'outer-pink-fur.jpg', 7: 'outer-fur-taupe.jpg' } },
+    accessories:  { title: 'Аксессуары',      base: 3900,  photos: { 0: 'acc-bracelet-pearl.jpg' } },
     home:         { title: 'Домашняя одежда', base: 6900  },
     suits:        { title: 'Костюмы',         base: 9500  }
   };
@@ -1357,46 +1358,48 @@ h1, h2, h3, .serif { font-family: var(--font-serif); font-weight: 500; line-heig
     '<path d="M10 4a2 2 0 1 1 2 2l-8.9 6.6c-.9.7-.4 2.1.7 2.1h16.4c1.1 0 1.6-1.4.7-2.1L12 6"/></svg>';
 
   const ITEM_OVERRIDES = {
-    'dresses:0': { name: 'Платье с воланами, белое', meta: 'Хлопок · шелк', price: 6990 },
-    'dresses:1': { name: 'Платье-корсет, серое', meta: 'Атлас · кружево', price: 6459 },
-    'dresses:2': { name: 'Платье-рубашка, серое', meta: 'Лен · вискоза', price: 7499 },
-    'dresses:3': { name: 'Платье с рюшами, персик', meta: 'Шифон · вискоза', price: 5990 },
-    'dresses:4': { name: 'Коктейльное платье с кружевом, крем', meta: 'Атлас · кружево', price: 5290 },
-    'dresses:5': { name: 'Платье-мини в горошек, черное', meta: 'Хлопок · атлас', price: 4890 },
-    'dresses:6': { name: 'Вечернее платье с воланами, голубое', meta: 'Атлас · шифон', price: 9890 },
-    'dresses:7': { name: 'Платье-мини с драпировкой, серо-голубое', meta: 'Атлас · эластан', price: 9990 },
-    'tops:0': { name: 'Топ-корсет, розовый', meta: 'Атлас · кружево', price: 1990 },
-    'tops:1': { name: 'Топ с кружевом, мятно-розовый', meta: 'Хлопок · кружево', price: 1790 },
-    'tops:2': { name: 'Блуза с воланами, черная', meta: 'Хлопок · вискоза', price: 2490 },
-    'tops:3': { name: 'Топ с бантом и воланом, голубое', meta: 'Хлопок · эластан', price: 4990 },
-    'tops:4': { name: 'Топ-камисоль с кружевом, белый', meta: 'Хлопок · вискоза', price: 3990 },
-    'tops:5': { name: 'Топ в горошек, тёмно-синий', meta: 'Эластан · вискоза', price: 2290 },
-    'pants:0': { name: 'Джинсы-клёш с высокой посадкой', meta: 'Хлопок · деним', price: 6990 },
-    'pants:1': { name: 'Брюки-клёш с кольцами, хаки', meta: 'Вискоза · лён', price: 5490 },
+    'dresses:0': { name: 'Платье с воланами, белое', meta: 'Хлопок, шелк', price: 6990 },
+    'dresses:1': { name: 'Платье-корсет, серое', meta: 'Атлас, кружево', price: 6459 },
+    'dresses:2': { name: 'Платье-рубашка, серое', meta: 'Лен, вискоза', price: 7499 },
+    'dresses:3': { name: 'Платье с рюшами, персик', meta: 'Шифон, вискоза', price: 5990 },
+    'dresses:4': { name: 'Коктейльное платье с кружевом, крем', meta: 'Атлас, кружево', price: 5290 },
+    'dresses:5': { name: 'Платье-мини в горошек, черное', meta: 'Хлопок, атлас', price: 4890 },
+    'dresses:6': { name: 'Вечернее платье с воланами, голубое', meta: 'Атлас, шифон', price: 9890 },
+    'dresses:7': { name: 'Платье-мини с драпировкой, серо-голубое', meta: 'Атлас, эластан', price: 9990 },
+    'tops:0': { name: 'Топ-корсет, розовый', meta: 'Атлас, кружево', price: 1990 },
+    'tops:1': { name: 'Топ с кружевом, мятно-розовый', meta: 'Хлопок, кружево', price: 1790 },
+    'tops:2': { name: 'Блуза с воланами, черная', meta: 'Хлопок, вискоза', price: 2490 },
+    'tops:3': { name: 'Топ с бантом и воланом, голубое', meta: 'Хлопок, эластан', price: 4990 },
+    'tops:4': { name: 'Топ-камисоль с кружевом, белый', meta: 'Хлопок, вискоза', price: 3990 },
+    'tops:5': { name: 'Топ в горошек, тёмно-синий', meta: 'Эластан, вискоза', price: 2290 },
+    'pants:0': { name: 'Джинсы-клёш с высокой посадкой', meta: 'Хлопок, деним', price: 6990 },
+    'pants:1': { name: 'Брюки-клёш с кольцами, хаки', meta: 'Вискоза, лён', price: 5490 },
 
-    'pants:2': { name: 'Брюки клёш со шлицами, черные', meta: 'Шерсть · хлопок', price: 7990 },
-    'pants:3': { name: 'Брюки-клёш с поясом в горошек, розовые', meta: 'Хлопок · лён', price: 6490 },
-    'pants:4': { name: 'Брюки-клёш из велюра, светло-серые', meta: 'Хлопок · вискоза', price: 5990 },
-    'pants:5': { name: 'Брюки-клёш с пояском-горошек, серые', meta: 'Хлопок · лён', price: 4990 },
-    'pants:6': { name: 'Брюки клёш с высокой талией, голубые', meta: 'Хлопок · эластан', price: 5490 },
-    'pants:7': { name: 'Брюки палаццо атласные, голубые', meta: 'Вискоза · шёлк', price: 7990 },
-    'tops:6': { name: 'Мятный топ с кружевной вставкой', meta: 'Хлопок · кружево', price: 2990 },
-    'outer:3': { name: 'Куртка из искусственного меха, кремовая', meta: 'Искусственный мех · вискоза', price: 11990 },
-    'outer:4': { name: 'Меховая куртка с брошкой, кремовая', meta: 'Шерсть · Шёлк', price: 13990 },
-    'outer:5': { name: 'Куртка-деним с мехом, синяя', meta: 'Хлопок · Шерсть', price: 27900 },
-    'tops:7': { name: 'Топ-блуза с оборкой, белая', meta: 'Хлопок · поплин', price: 3290 },
-    'outer:1': { name: 'Куртка-пальто двубортная с оборкой, серая', meta: 'Шерсть · вискоза', price: 7990 },,
-    'skirts:0': { name: 'Юбка с рюшами, серо-белая', meta: 'Лен · поплин', price: 2990 },
-    'skirts:1': { name: 'Юбка-миди с воланами, крем', meta: 'Вискоза · шифон', price: 4490 },
-    'skirts:2': { name: 'Юбка-шотландка в клетку, серая', meta: 'Вискоза · шерсть', price: 3490 },
-    'skirts:3': { name: 'Юбка-годе из кружева, молочная', meta: 'Полиамид · эластан', price: 5290 },
-    'skirts:4': { name: 'Юбка-пачка с бантом, розовая', meta: 'Шифон · кружево', price: 3890 },
-    'skirts:5': { name: 'Мини-юбка-баллон, молочная', meta: 'Хлопок · лён', price: 3590 },
-    'skirts:6': { name: 'Юбка-мини с кружевом, черная', meta: 'Вискоза · шелк', price: 3990 },
-    'skirts:7': { name: 'Юбка джинсовая мини с воланом', meta: 'Деним · хлопок', price: 5990 },
-    'outer:7': { name: 'Меховая куртка с отложным воротником, пудровая', meta: 'Шерсть · Шёлк', price: 21950 }
-    'outer:0': { name: 'Куртка с ворсом-мехом, розовая', meta: 'Хлопок · Шерсть', price: 34900 },
-    'outer:2': { name: 'Куртка-пуховик с вязаным воротником, белая', meta: 'Хлопок · Шерсть', price: 44900 }
+    'pants:2': { name: 'Брюки клёш со шлицами, черные', meta: 'Шерсть, хлопок', price: 7990 },
+    'pants:3': { name: 'Брюки-клёш с поясом в горошек, розовые', meta: 'Хлопок, лён', price: 6490 },
+    'pants:4': { name: 'Брюки-клёш из велюра, светло-серые', meta: 'Хлопок, вискоза', price: 5990 },
+    'pants:5': { name: 'Брюки-клёш с пояском-горошек, серые', meta: 'Хлопок, лён', price: 4990 },
+    'pants:6': { name: 'Брюки клёш с высокой талией, голубые', meta: 'Хлопок, эластан', price: 5490 },
+    'pants:7': { name: 'Брюки палаццо атласные, голубые', meta: 'Вискоза, шёлк', price: 7990 },
+    'tops:6': { name: 'Мятный топ с кружевной вставкой', meta: 'Хлопок, кружево', price: 2990 },
+    'outer:3': { name: 'Байкер из меха, кремовый', meta: 'Замша, Шерсть', fill: 'Наполнитель: полиэстер', price: 11990 },
+    'outer:4': { name: 'Куртка с брошкой, кремовая', meta: 'Шерсть, Шёлк', fill: 'Наполнитель: полиэстер', price: 13990 },
+    'outer:5': { name: 'Деним с воротником, синий', meta: 'Хлопок, Шерсть', fill: 'Наполнитель: синтетический пух', price: 27900 },
+    'outer:6': { name: 'Бомбер с воротником, розовый', meta: 'Шёлк, Шерсть', fill: 'Наполнитель: полиэстер', price: 29900 },
+    'tops:7': { name: 'Топ-блуза с оборкой, белая', meta: 'Хлопок, поплин', price: 3290 },
+    'outer:1': { name: 'Пальто двубортное, серое', meta: 'Шерсть, Кашемир', fill: 'Наполнитель: полиэстер', price: 7990 }, 
+    'skirts:0': { name: 'Юбка с рюшами, серо-белая', meta: 'Лен, поплин', price: 2990 },
+    'skirts:1': { name: 'Юбка-миди с воланами, крем', meta: 'Вискоза, шифон', price: 4490 },
+    'skirts:2': { name: 'Юбка-шотландка в клетку, серая', meta: 'Вискоза, шерсть', price: 3490 },
+    'skirts:3': { name: 'Юбка-годе из кружева, молочная', meta: 'Полиамид, эластан', price: 5290 },
+    'skirts:4': { name: 'Юбка-пачка с бантом, розовая', meta: 'Шифон, кружево', price: 3890 },
+    'skirts:5': { name: 'Мини-юбка-баллон, молочная', meta: 'Хлопок, лён', price: 3590 },
+    'skirts:6': { name: 'Юбка-мини с кружевом, черная', meta: 'Вискоза, шелк', price: 3990 },
+    'skirts:7': { name: 'Юбка джинсовая мини с воланом', meta: 'Деним, хлопок', price: 5990 },
+    'outer:7': { name: 'Меховая куртка, пудровая', meta: 'Шерсть, Шёлк', fill: 'Наполнитель: полиэстер', price: 21950 },
+    'outer:0': { name: 'Куртка с ворсом, розовая', meta: 'Замша, Шерсть', fill: 'Наполнитель: полиэстер', price: 34900 },
+    'outer:2': { name: 'Пуховик с воротником, белый', meta: 'Хлопок, Шерсть', fill: 'Наполнитель: пух', price: 44900 },
+    'accessories:0': { name: 'Браслет из жемчуга с подвеской «Жёлудь», молочный', meta: 'Натуральный жемчуг, серебро 925, фианиты', price: 4990 }
   };
 
   function phCard(title, price, i, photos, catKey) {
@@ -1419,6 +1422,7 @@ h1, h2, h3, .serif { font-family: var(--font-serif); font-weight: 500; line-heig
         '<div class="card__info">' +
           '<h3 class="card__name">' + name + '</h3>' +
           '<p class="card__meta">' + (ov && ov.meta ? ov.meta : 'Фото появится позже') + '</p>' +
+          (ov && ov.fill ? '<p class="card__meta card__fill">' + ov.fill + '</p>' : '') +
           '<p class="card__price">' + money(priceShow) + '</p>' +
         '</div>' +
       '</article>'
