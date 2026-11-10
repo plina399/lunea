@@ -1746,6 +1746,22 @@ h1, h2, h3, .serif { font-family: var(--font-serif); font-weight: 500; line-heig
   });
   $$('.form input', form).forEach(i => i.addEventListener('input', () => i.classList.remove('error')));
 
+  /* ---------- Размерная сетка ---------- */
+  const sizeModal = document.getElementById('sizeModal');
+  document.querySelectorAll('.size-link').forEach(link => link.addEventListener('click', e => {
+    e.preventDefault();
+    sizeModal.classList.add('open');
+    sizeModal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }));
+  const closeSize = () => {
+    sizeModal.classList.remove('open');
+    sizeModal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  };
+  document.getElementById('sizeModalClose').addEventListener('click', closeSize);
+  sizeModal.addEventListener('click', e => { if (e.target === sizeModal) closeSize(); });
+
   /* ---------- Плавные появления секций при скролле ---------- */
   const io = new IntersectionObserver(entries => {
     entries.forEach(en => {
